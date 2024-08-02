@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - guiihxyz</title>
+    <link rel="shortcut icon" href="src/images/logo.svg" type="image/x-icon">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DM Sans Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        * {
+            font-family: "DM Sans", sans-serif !important;
+        }
+
+        *::selection {
+            background: #DC2626;
+            color: #fff;
+        }
+        *::-moz-selection {
+            background: #DC2626;
+            color: #fff;
+        }
+
+        #text_title_apresentation {
+            display: inline-block;
+            white-space: nowrap;
+            padding-right: 7px;
+            border-right: 3px solid;
+        }
+
+        .not_typing {
+            animation: caret 1s steps(1) infinite;
+        }
+
+        @keyframes caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0F0F0F]">
+    <header class="fixed w-screen border-b border-slate-50/[0.06] backdrop-blur z-50 delay_none_reveal">
+        <nav class="px-48 py-7 flex justify-center lg:justify-between items-center w-full">
+            <a href="" target="_blank">
+                <div class="flex justify-center items-center gap-2 text-slate-100">
+                    <h1 class="text-2xl font-black">guiihxyz</h1>
+                    <img src="src/images/logo.svg" alt="Logo guiihxyz" class="w-[30px]">
+                </div>
+            </a>
+            <div class="hidden lg:block text-stone-400">
+                <ul class="flex gap-4">
+                    <li><a href="#section_about_me" class="font-semibold transition-colors hover:text-slate-100">Sobre</a></li>
+                    <li><a href="#section_skills" class="font-semibold transition-colors hover:text-slate-100">Habilidades</a></li>
+                    <li><a href="#section_projects" class="font-semibold transition-colors hover:text-slate-100">Projetos</a></li>
+                    <li><a href="#section_contacts" class="font-semibold transition-colors hover:text-slate-100">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="h-screen flex justify-center 2xl:justify-between items-center" id="section_title_screen" style="padding: 0 10%;">
+            <div class="flex flex-col items-center 2xl:items-start z-10 delay_small_reveal">
+                <div class="h-[36px] md:h-[48px] mb-6">
+                    <h1 class="font-bold text-3xl md:text-5xl text-slate-100" id="text_title_apresentation">
+                        <span class="text-red-600" id="text_title_apresentation_mark"></span>
+                    </h1>
+                </div>
+                <div>
+                    <a href="#section_contacts" class="w-[265px] block border border-transparent bg-red-600 rounded-full text-slate-100 font-semi px-16 py-2 transition-colors hover:bg-transparent hover:border-red-600">Entrar em contato</a>
+                </div>
+            </div>
+            <div class="hidden 2xl:block z-10 delay_extra_big_reveal"">
+                <img src="src/images/logo.svg" alt="Logo guiihxyz" class="w-[550px] min-[1800px]:w-[700px]">
+            </div>
+        </section>
+        <section class="flex justify-center pt-8 pb-16" id="section_about_me">
+            <div class="lg:w-[748px] xl:w-[1248px] flex flex-col md:flex-row items-center gap-[48px] p-8 rounded bg-[#151515] border border-slate-50/[0.06] delay_small_reveal">
+                <div class="lg:w-[400px] xl:w-[600px] delay_medium_reveal">
+                    <img src="src/images/guiihxyz.jpg" alt="Foto representando guiihxyz" class="w-full rounded-xl">
+                </div>
+                <div class="lg:w-[350px] xl:w-[350px]">
+                    <p class="text-red-600 text-2xl font-bold mb-1 delay_large_reveal">Quem sou eu?</p>
+                    <h1 class="text-slate-200 text-4xl font-black mb-5 delay_large_reveal">Meu nome é Guilherme Silva</h1>
+                    <p class="text-stone-400 text-xl delay_extra_big_reveal">atualmente trabalho como Front-end, de modo freelancer, mas possuo experiência com BackEnd e criação de jogos. Eu comecei a programar desdos meus 11 anos, e desde lá venho estudando e aprimorando meu conhecimento, tendo como objetivo um dia, fundar minha própria empresa.</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#151515] border-t border-b border-slate-50/[0.06] flex flex-col items-center gap-12 px-8 py-16 delay_extra_big_reveal" id="section_skills">
+            <div class="delay_medium_reveal">
+                <h1 class="text-slate-100 text-3xl font-bold">Habilidades</h1>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="interval_card_reveal">
+                    <abbr title="HTML5" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-xl">HTML5</p>
+                            <img src="src/languages/icons/html5.svg" alt="Logo HTML5" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="CSS3" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-xl">CSS3</p>
+                            <img src="src/languages/icons/css3.svg" alt="Logo CSS3" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="JavaScript" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-lg">JavaScript</p>
+                            <img src="src/languages/icons/javascript.svg" alt="Logo JavaScript" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="PHP" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-xl">PHP</p>
+                            <img src="src/languages/icons/php.svg" alt="Logo PHP" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="C#" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-xl">C#</p>
+                            <img src="src/languages/icons/csharp.svg" alt="Logo C#" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="MySQL" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-xl">MySQL</p>
+                            <img src="src/languages/icons/mysql.svg" alt="Logo MySQL" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="Bootstrap" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-lg">Bootstrap</p>
+                            <img src="src/languages/icons/bootstrap.svg" alt="Logo Boostrap" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="Tailwind CSS" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-md">Tailwind CSS</p>
+                            <img src="src/languages/icons/tailwindcss.svg" alt="Logo Tailwind CSS" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="Jquery" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-xl">Jquery</p>
+                            <img src="src/languages/icons/jquery.svg" alt="Logo Jquery" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="Unity" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-xl">Unity</p>
+                            <img src="src/languages/icons/unity.svg" alt="Logo Unity" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+                <div class="interval_card_reveal">
+                    <abbr title="GameMaker" style="text-decoration: none;">
+                        <div class="w-[125px] h-[130px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-lg hover:scale-110" style="transition: transform 0.5s;">
+                            <p class="text-red-600 font-bold text-lg">GameMaker</p>
+                            <img src="src/languages/icons/unity.svg" alt="Logo GameMaker" class="w-[48px]">
+                        </div>
+                    </abbr>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col items-center gap-12 px-8 py-16" id="section_projects">
+            <div class="delay_large_reveal">
+                <h1 class="text-slate-100 text-3xl font-bold">Projetos</h1>
+            </div>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="interval_card_reveal">
+                    <div class="group cursor-pointer rounded-lg border border-slate-50/[0.06] border-b-4 border-b-red-600 overflow-hidden">
+                        <abbr title="Jogai" style="text-decoration: none;">
+                            <div class="relative w-[320px] h-[180px] md:w-[640px] md:h-[360px]">
+                                <div class="w-full h-full absolute top-0 left-0">
+                                    <img src="src/prints/projects/jogai.png" alt="Foto do projeto Jogai">
+                                </div>
+                                <div class="absolute bottom-3 left-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <h2 class="text-slate-100 font-bold text-xl -mb-1">Jogai</h2>
+                                    <p class="text-slate-100">Site para comunidades gamers</p>
+                                </div>
+                                <div class="w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);"></div>
+                            </div>
+                        </abbr>
+                    </div>
+                    <button type="button" class="w-full block border border-transparent bg-red-800 rounded-full text-slate-100 font-semi mt-4 px-16 py-2 cursor-pointer transition-colors hover:bg-red-900 active:bg-red-950 button_off">Acessar</button>
+                </div>
+                <div class="interval_card_reveal">
+                    <div class="group cursor-pointer rounded-lg border border-slate-50/[0.06] border-b-4 border-b-red-600 overflow-hidden">
+                        <abbr title="DecoDeco" style="text-decoration: none;">
+                            <div class="relative w-[320px] h-[180px] md:w-[640px] md:h-[360px]">
+                                <div class="w-full h-full absolute top-0 left-0">
+                                    <img src="src/prints/projects/decodeco.png" alt="Foto do projeto DecoDeco">
+                                </div>
+                                <div class="absolute bottom-3 left-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <h2 class="text-slate-100 font-bold text-xl -mb-1">DecoDeco</h2>
+                                    <p class="text-slate-100">Recriação do site Tiktok</p>
+                                </div>
+                                <div class="w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);"></div>
+                            </div>
+                        </abbr>
+                    </div>
+                    <button type="button" class="w-full block border border-transparent bg-red-800 rounded-full text-slate-100 font-semi mt-4 px-16 py-2 cursor-pointer transition-colors hover:bg-red-900 active:bg-red-950 button_off">Acessar</button>
+                </div>
+                <div class="interval_card_reveal">
+                    <div class="group cursor-pointer rounded-lg border border-slate-50/[0.06] border-b-4 border-b-red-600 overflow-hidden">
+                        <abbr title="GuessAgent" style="text-decoration: none;">
+                            <div class="relative w-[320px] h-[180px] md:w-[640px] md:h-[360px]">
+                                <div class="w-full h-full absolute top-0 left-0">
+                                    <img src="src/prints/projects/guessagent.png" alt="Foto do projeto GuessAgent">
+                                </div>
+                                <div class="absolute bottom-3 left-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                    <h2 class="text-slate-100 font-bold text-xl -mb-1">GuessAgent</h2>
+                                    <p class="text-slate-100">Um jogo onde você deve acertar o agente correto do jogo Valorant</p>
+                                </div>
+                                <div class="w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);"></div>
+                            </div>
+                        </abbr>
+                    </div>
+                    <button type="button" class="w-full block border border-transparent bg-red-800 rounded-full text-slate-100 font-semi mt-4 px-16 py-2 cursor-pointer transition-colors hover:bg-red-900 active:bg-red-950 button_off">Acessar</button>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#151515] border-t border-b border-slate-50/[0.06] flex flex-col items-center gap-12 px-8 py-16 delay_small_reveal" id="section_contacts">
+            <div class="delay_medium_reveal">
+                <h1 class="text-slate-100 text-3xl font-bold">Contatos</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-8">
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="hover_contact_icon interval_card_reveal" id="email_icon">
+                        <a href="mailto:cguilhermecosta27@gmail.com" target="_blank">
+                            <abbr title="Email" style="text-decoration: none;">
+                                <div class="w-[100px] h-[100px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-full hover:border-red-600 hover:scale-110" style="transition: border 0.5s, transform 0.5s;">
+                                    <img src="src/contact/icons/email.svg" alt="Logo Email" class="w-[40px]">
+                                </div>
+                            </abbr>
+                        </a>
+                    </div>
+                    <div class="hover_contact_icon interval_card_reveal" id="instagram_icon">
+                        <a href="https://www.instagram.com/gh.xyzz/" target="_blank">
+                            <abbr title="Instagram" style="text-decoration: none;">
+                                <div class="w-[100px] h-[100px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-full hover:border-red-600 hover:scale-110" style="transition: border 0.5s, transform 0.5s;">
+                                    <img src="src/contact/icons/instagram.svg" alt="Logo Instagram" class="w-[40px]">
+                                </div>
+                            </abbr>
+                        </a>
+                    </div>
+                    <div class="hover_contact_icon interval_card_reveal" id="whatsapp_icon">
+                        <a href="https://wa.me/5533999478236" target="_blank">
+                            <abbr title="Whatsapp" style="text-decoration: none;">
+                                <div class="w-[100px] h-[100px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-full hover:border-red-600 hover:scale-110" style="transition: border 0.5s, transform 0.5s;">
+                                    <img src="src/contact/icons/whatsapp.svg" alt="Logo Whatsapp" class="w-[40px]">
+                                </div>
+                            </abbr>
+                        </a>
+                    </div>
+                    <div class="hover_contact_icon interval_card_reveal" id="github_icon">
+                        <a href="https://github.com/guiihxyz" target="_blank">
+                            <abbr title="GitHub" style="text-decoration: none;">
+                                <div class="w-[100px] h-[100px] flex flex-col justify-center items-center gap-2 border border-slate-50/[0.06] border-b-4 border-b-red-600 bg-[#0F0F0F] rounded-full hover:border-red-600 hover:scale-110" style="transition: border 0.5s, transform 0.5s;">
+                                    <img src="src/contact/icons/github.svg" alt="Logo GitHub" class="w-[40px]">
+                                </div>
+                            </abbr>
+                        </a>
+                    </div>
+                </div>
+                <div class="interval_card_reveal">
+                    <h2 class="text-zinc-400 text-lg font-semibold text-center" id="text_toggle_name_contact">*passe o mouse em cima*</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="lg:h-[68px] flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-0 py-4 lg:py-0" style="padding-left: 10%; padding-right: 10%;">
+        <div>
+            <p class="text-slate-100 text-center" style="font-weight: 500;">Copyright © 2024 <a href="" target="_blank" class="text-red-600 hover:underline">guiihxyz.com</a>. Todos os direitos reservados.</p>
+        </div>
+        <div class="flex items-center gap-3">
+            <p class="text-slate-100" style="font-weight: 500;">Feito por:</p>
+            <div>
+                <a href="" target="_blank">
+                    <div class="flex items-center gap-1">
+                        <p class="text-slate-100" style="font-weight: 500;">guiihxyz</p>
+                        <img src="src/images/logo.svg" alt="Logo guiihxyz" class="w-[24px]">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        $(document).ready(function() {
+            const messages = [
+                'Olá, eu me chamo guiihxyz!',
+                'Sou desenvolvedor Front-End.'
+            ]
+
+            let message_index = 0
+            let char_index = 0
+            const typing_Speed = 100
+            const erasing_speed = 50
+            const display_duration = 3000
+            const delay_between_messages = 500
+            const start_delay = 1500
+
+            function typeMessage() {
+                $('#text_title_apresentation').removeClass('not_typing')
+                const current_message = messages[message_index]
+                if(char_index < current_message.length) {
+                    $('#text_title_apresentation').html(current_message.substring(0, char_index + 1))
+                    char_index++
+                    setTimeout(typeMessage, typing_Speed)
+                } else {
+                    $('#text_title_apresentation').addClass('not_typing')
+                    setTimeout(eraseMessage, display_duration)
+                }
+            }
+
+            function eraseMessage() {
+                $('#text_title_apresentation').removeClass('not_typing')
+                const current_message = messages[message_index]
+                if(char_index > 0) {
+                    $('#text_title_apresentation').html(current_message.substring(0, char_index - 1))
+                    char_index--
+                    setTimeout(eraseMessage, erasing_speed)
+                } else {
+                    $('#text_title_apresentation').addClass('not_typing')
+                    message_index = (message_index + 1) % messages.length
+                    setTimeout(typeMessage, delay_between_messages)
+                }
+            }
+
+            setTimeout(typeMessage, start_delay)
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".hover_contact_icon > a > abbr").hover(
+                function() {
+                    var hover_text = $(this).attr("title")
+                    $("#text_toggle_name_contact").text(hover_text)
+                }, 
+                function() {
+                    setTimeout(() => {
+                        if(!$(".hover_contact_icon > a > abbr:hover").length) {
+                            $("#text_toggle_name_contact").text("*passe o mouse em cima*")  
+                        }
+                    }, 1000)
+                }
+            )
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            const scroll_reveal = ScrollReveal({
+                origin: "top",
+                distance: "50px",
+                duration: 2000,
+            })
+            scroll_reveal.reveal(".delay_none_reveal")
+            scroll_reveal.reveal(".delay_small_reveal", { delay: 200 })
+            scroll_reveal.reveal(".delay_medium_reveal", { delay: 300 })
+            scroll_reveal.reveal(".delay_large_reveal", { delay: 400 })
+            scroll_reveal.reveal(".delay_extra_big_reveal", { delay: 600 })
+            scroll_reveal.reveal(".interval_card_reveal", { interval: 400 })
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.button_off').click(function() {
+                $(this).text('Indisponível')
+            })
+        })
+    </script>
+</body>
+</html>
